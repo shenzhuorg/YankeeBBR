@@ -101,7 +101,7 @@ startscalable-re(){
     depmod -a
     modprobe tcp_scalable_re
 	rm -rf /etc/sysctl.conf
-	wget -O /etc/sysctl.conf -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/scalable-re.conf
+	wget -O /etc/sysctl.conf -N --no-check-certificate https://raw.githubusercontent.com/shenzhuorg/YankeeBBR/master/scalable-re.conf
 	sysctl -p
     cd .. && rm -rf $dir/scalable_re
 	echo "魔改版scalable-re启动成功！"
